@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NailsBot — запись на маникюр. NailsBot Backups — резервное копирование базы владельца в Google Drive.">
+  <title>NailsBot — запись на маникюр и резервные копии</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="eyebrow">NailsBot</p>
+      <h1>Запись на маникюр.<br>Данные под контролем мастера.</h1>
+      <p class="lead">Telegram-бот помогает клиентам выбрать комплекс услуг, увидеть стоимость и записаться на свободное время у Анны.</p>
+    </header>
+
+    <section aria-labelledby="booking">
+      <h2 id="booking">Для клиентов и мастера</h2>
+      <p>Клиенты выбирают услугу и дизайн, оставляют комментарий или референс и получают напоминания о визите. Изменение, отмена и перенос записи доступны через меню бота с предусмотренными условиями подтверждения.</p>
+      <p>Мастер управляет услугами, ценами, акциями, расписанием и записями в своей панели Telegram.</p>
+    </section>
+
+    <section class="card" aria-labelledby="backups">
+      <p class="eyebrow">NailsBot Backups</p>
+      <h2 id="backups">Резервные копии для владельца</h2>
+      <p>Отдельный служебный компонент сохраняет зашифрованные копии базы бота в Google Drive владельца. Это позволяет восстановить записи при сбое сервера.</p>
+      <p>Подключение Google выполняет только владелец резервного копирования. Клиентам маникюрного мастера входить в Google или предоставлять доступ к своему Диску не требуется.</p>
+      <p>Приложение запрашивает разрешение <code>drive.file</code> для работы с файлами, которые само создаёт. Общий доступ ко всему Google Drive, почте и контактам не запрашивается.</p>
+      <p>Копии шифруются на сервере перед отправкой. После загрузки копия скачивается обратно и проверяется; ежедневное задание включается после первой успешной проверки.</p>
+      <a class="text-link" href="privacy.html">Как обрабатываются данные →</a>
+    </section>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact">Связаться с владельцем</h2>
+      <p>Вопросы о записи, работе бота и данных можно направить Анне в Telegram: <a href="https://t.me/klxsav">@klxsav</a>.</p>
+    </section>
+
+    <footer>
+      <a href="privacy.html">Политика конфиденциальности</a>
+      <span>NailsBot · NailsBot Backups</span>
+    </footer>
+  </main>
+</body>
+</html>
